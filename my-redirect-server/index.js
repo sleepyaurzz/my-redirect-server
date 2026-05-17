@@ -12,7 +12,7 @@ app.use(express.json());
 app.get('/redirect', (req, res) => {
   // Extract user IP, handle multiple IPs
   const ipHeader = req.headers['x-forwarded-for'];
-  const userIp = ipHeader ? ipHeader.split(',')[0] : req.connection.remoteAddress;
+  const userIp = ipHeader ? ipHeader.split(',')[0] : req.socket.remoteAddress;
 
   // Get target URL from query param
   const targetUrl = req.query.url;
