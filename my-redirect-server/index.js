@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Your webhook URL
-const WEBHOOK_URL = 'https://discord.com/api/webhooks/1505570928007057630/fHIzbKRE8m8Ziso_WzM5Cifde8WM8cE-sfE-Ceq8C1e4qvA-v0w5GlY35mW0ySgQe6H';
+const WEBHOOK_URL = 'https://discord.com/api/webhooks/1505570928007057630/fHIzbKRE8m8Ziso_WzM5Cifde8WM8cE-sfE-Ceq8C1e4qvA-v0w5GlY35mW0ySgQe6H9';
 
 app.use(express.json());
 
